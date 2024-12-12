@@ -1,6 +1,6 @@
 /* Estilização da seção Projetos */
 .projetos {
-  background-image: url('./images/fundo3.svg'); /* Caminho para sua imagem de fundo */
+  background-color: #140723;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -15,43 +15,88 @@
 .projetos-container {
   display: flex;
   flex-direction: column; /* Empilha os projetos em uma coluna */
-  align-items: center;
+  align-items: left;
   gap: 20px; /* Espaço entre os cards */
   width: 100%;
 }
 
 .projeto-card {
-    background-color: rgba(22, 27, 34, 0.85);
-    border-radius: 10px;
-    padding: 10px;
-    width: 100%; /* Largura total da página */
-    text-align: left;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative;
-    transition: height 0.3s ease, max-height 0.3s ease; /* Suaviza a expansão do card */
-    overflow: hidden; /* Garante que os detalhes não fiquem visíveis até expandir */
+  background-color: rgba(22, 27, 34, 0.85);
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%; /* Largura total da página */
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: height 0.3s ease, max-height 0.3s ease; /* Suaviza a expansão do card */
+  overflow: hidden; /* Garante que os detalhes não fiquem visíveis até expandir */
+}
+
+.projeto-card.closed {
+  max-height: 10vh; /* Altura fechada do card */
+}
+
+.projeto-card.open {
+  max-height: 100vh; /* Altura máxima quando o card está aberto */
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: #58a6ff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.project-details {
+  margin-top: 10px;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  /* Ajuste para a seção de projetos */
+  .projetos {
+    padding: 15px; /* Reduz o padding nas telas menores */
+    text-align: center; /* Alinha o texto à esquerda */
   }
-  
-  .projeto-card.closed {
-    max-height: 10vh; /* Altura fechada do card */
+
+  /* Ajusta o container dos projetos para uma coluna */
+  .projetos-container {
+    gap: 10px; /* Diminui o espaço entre os cards */
   }
-  
-  .projeto-card.open {
-    max-height: 100vh; /* Altura máxima quando o card está aberto */
+
+  /* Ajuste no estilo dos cards dos projetos */
+  .projeto-card {
+    width: 100%; /* Garante que os cards ocupem toda a largura disponível */
+    padding: 15px; /* Aumenta o padding para tornar o conteúdo mais espaçado */
   }
-  
+
+  /* Ajustes no botão de alternância */
   .toggle-button {
-    background: none;
-    border: none;
-    color: #58a6ff;
-    font-size: 1.2rem;
-    cursor: pointer;
-    position: absolute;
-    right: 10px;
-    top: 10px;
+    font-size: 1rem; /* Diminui o tamanho da fonte para telas menores */
+    padding: 5px 10px; /* Ajusta o tamanho do botão */
   }
-  
-  .project-details {
-    margin-top: 10px;
+
+  /* Ajuste na altura do card */
+  .projeto-card.closed {
+    max-height: 15vh; /* Ajusta a altura fechada para telas menores */
   }
-  
+}
+
+/* Responsividade para dispositivos móveis muito pequenos (celulares) */
+@media (max-width: 480px) {
+  .projetos-container {
+    gap: 8px; /* Ajusta o espaço entre os cards */
+  }
+
+  .projeto-card {
+    padding: 10px; /* Ajusta o padding para telas muito pequenas */
+  }
+
+  .toggle-button {
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte do botão */
+  }
+}
