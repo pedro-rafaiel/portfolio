@@ -2,12 +2,12 @@
   "name": "meuportfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/pedro-rafaiel/portfolio"
   "dependencies": {
     "cra-template": "1.2.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "5.0.1",
-    "homepage": "https://github.com/pedro-rafaiel/portfolio",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
