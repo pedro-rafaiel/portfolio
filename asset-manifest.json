@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.dfa94a6b.css",
-    "main.js": "/static/js/main.f3bd967e.js",
-    "static/media/fundo1.svg": "/static/media/fundo1.711f801b08f50b782581.svg",
-    "static/media/fundo3.svg": "/static/media/fundo3.e83dfee2a8a325b42082.svg",
-    "static/media/fundo2.svg": "/static/media/fundo2.327af641b6463c41a656.svg",
-    "static/media/PERFIL.svg": "/static/media/PERFIL.7d8e5a68b18eb83b271fc80a0adaa544.svg",
-    "static/media/mysql.svg": "/static/media/mysql.a309758c9c09824cca451287c1e87567.svg",
-    "static/media/Python.svg": "/static/media/Python.603588be47dff6249f8b278f18752edb.svg",
-    "static/media/postgreesql.svg": "/static/media/postgreesql.b50b966c998e5c8e2aebd1d343500a36.svg",
-    "static/media/react.svg": "/static/media/react.a37c4898b4338b1b9a22a5951db42468.svg",
-    "static/media/c.svg": "/static/media/c.39bf9acc0b618dec6a1ce4a4fdfcc8d3.svg",
-    "static/media/MongoDB.svg": "/static/media/MongoDB.c0798ecb990bfd89a6e9c0e8477d6f67.svg",
-    "static/media/ts.svg": "/static/media/ts.bb7e10341f335eef6f4f287ef209fa06.svg",
-    "static/media/node.svg": "/static/media/node.21285f36768b50fff1798e0935fa8304.svg",
-    "static/media/js.svg": "/static/media/js.7a85cfcf6e7d5a420f374f33b5298da3.svg",
-    "index.html": "/index.html",
-    "main.dfa94a6b.css.map": "/static/css/main.dfa94a6b.css.map",
-    "main.f3bd967e.js.map": "/static/js/main.f3bd967e.js.map"
+    "main.css": "/portfolio/static/css/main.f918ae9f.css",
+    "main.js": "/portfolio/static/js/main.530dd2f2.js",
+    "static/media/fundo1.svg": "/portfolio/static/media/fundo1.711f801b08f50b782581.svg",
+    "static/media/fundo3.svg": "/portfolio/static/media/fundo3.e83dfee2a8a325b42082.svg",
+    "static/media/fundo2.svg": "/portfolio/static/media/fundo2.327af641b6463c41a656.svg",
+    "static/media/PERFIL.svg": "/portfolio/static/media/PERFIL.7d8e5a68b18eb83b271fc80a0adaa544.svg",
+    "static/media/mysql.svg": "/portfolio/static/media/mysql.a309758c9c09824cca451287c1e87567.svg",
+    "static/media/Python.svg": "/portfolio/static/media/Python.603588be47dff6249f8b278f18752edb.svg",
+    "static/media/postgreesql.svg": "/portfolio/static/media/postgreesql.b50b966c998e5c8e2aebd1d343500a36.svg",
+    "static/media/react.svg": "/portfolio/static/media/react.a37c4898b4338b1b9a22a5951db42468.svg",
+    "static/media/c.svg": "/portfolio/static/media/c.39bf9acc0b618dec6a1ce4a4fdfcc8d3.svg",
+    "static/media/MongoDB.svg": "/portfolio/static/media/MongoDB.c0798ecb990bfd89a6e9c0e8477d6f67.svg",
+    "static/media/ts.svg": "/portfolio/static/media/ts.bb7e10341f335eef6f4f287ef209fa06.svg",
+    "static/media/node.svg": "/portfolio/static/media/node.21285f36768b50fff1798e0935fa8304.svg",
+    "static/media/js.svg": "/portfolio/static/media/js.7a85cfcf6e7d5a420f374f33b5298da3.svg",
+    "index.html": "/portfolio/index.html",
+    "main.f918ae9f.css.map": "/portfolio/static/css/main.f918ae9f.css.map",
+    "main.530dd2f2.js.map": "/portfolio/static/js/main.530dd2f2.js.map"
   },
   "entrypoints": [
-    "static/css/main.dfa94a6b.css",
-    "static/js/main.f3bd967e.js"
+    "static/css/main.f918ae9f.css",
+    "static/js/main.530dd2f2.js"
   ]
 }
