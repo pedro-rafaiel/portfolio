@@ -1,0 +1,63 @@
+.inicio {
+    text-align: center;
+    background-image: url('./images/fundo1.svg'); /* Caminho da imagem de fundo */
+    background-size: cover; /* A imagem cobre toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    padding: 10vh 0;
+    height: 100vh; /* Define a altura como 100% da tela */
+}
+
+.perfil-container {
+    margin-top: 5vh;
+    display: inline-block; /* Permite que o container tenha apenas a largura necessária */
+}
+
+.perfil-img {
+    width: 50vh; /* Ajuste o tamanho da imagem conforme necessário */
+}
+
+.perfil-titulo {
+    color: white; /* Cor do texto */
+    font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
+    margin-bottom: 1vh; /* Espaço abaixo do título para separá-lo da imagem */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se não houver espaço */
+    font-size: 1.5rem;
+    margin-top: 1vh; /* Adiciona um espaço acima da navbar */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block; /* Use inline-block para permitir margens e padding */
+    margin-right: 5vw; /* Margem à direita com vw */
+    margin-bottom: 2vh; /* Espaço abaixo de cada item */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 1vh 2vw; /* Padding responsivo */
+    border-radius: 5vh; /* Arredonda os cantos */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.navbar ul li a:hover {
+    background-color: rgb(167, 106, 167); /* Efeito de hover */
+}
+
+/* Responsividade adicional */
+@media (max-width: 300vh) {
+    .navbar ul li {
+        margin-right: 2vw; /* Diminui a margem em telas menores */
+    }
+}
