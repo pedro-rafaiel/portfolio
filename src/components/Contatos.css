@@ -1,0 +1,102 @@
+/* Estilização da seção Sobre Mim */
+.contatos {
+    padding: 5vh;
+    background-color: #0E0D1E;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    width: 100vw; /* Garante que a largura ocupe toda a viewport */
+    min-height: 50vh; /* Garante que cubra a altura total da tela */
+    margin: 0; /* Remove margens automáticas */
+  }
+  
+  .contatos h1 {
+    text-align: center; /* Centraliza o título "Sobre Mim" */
+    margin-bottom: 20px;
+    color: white;
+    font-size: 8h;
+  }
+  
+  .contatos p {
+    text-align: center; /* Centraliza todo o texto dentro das tags <p> */
+    color: white;
+    font-size: 3vh;
+  }
+  
+  .experiencias-title, .ctt-title {
+    text-align: center; /* Centraliza os títulos de experiências e ctt */
+    margin: 20px 0; /* Espaço vertical entre os títulos e o conteúdo */
+    font-size: 5vh;
+  }
+  
+  .ctt-container {
+    display: flex; /* Usamos flexbox para alinhar as imagens lado a lado */
+    justify-content: center; /* Centraliza as imagens */
+    flex-wrap: wrap; /* Permite que as imagens se movam para a linha seguinte em telas menores */
+    margin-top: 5vh; /* Espaçamento acima das imagens */
+  }
+  
+  .ctt-img {
+    width: 7vw; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 1vw; /* Margem entre as imagens */
+  }
+  
+  /* Responsividade para telas pequenas */
+  @media (max-width: 768px) {
+    /* Ajustes na seção Sobre Mim */
+    .contatos {
+      padding: 4vh 2vw; /* Reduz o padding para dispositivos menores */
+    }
+  
+    .contatos h1 {
+      font-size: 6vh; /* Ajusta o tamanho do título */
+    }
+  
+    .contatos p {
+      font-size: 4vh; /* Aumenta o tamanho da fonte para uma leitura melhor em telas pequenas */
+    }
+  
+    .experiencias-title, .ctt-title {
+      font-size: 4vh; /* Ajusta o tamanho das fontes dos títulos */
+    }
+  
+    .ctt-container {
+      gap: 10px; /* Reduz o espaço entre as imagens para dispositivos menores */
+    }
+  
+    .linguagem-img {
+      width: 10vw; /* Ajusta o tamanho das imagens para caberem melhor na tela */
+      margin: 1vw; /* Reduz a margem entre as imagens */
+    }
+  }
+  
+  /* Responsividade para dispositivos móveis muito pequenos */
+  @media (max-width: 480px) {
+    .contatos {
+      padding: 3vh 2vw; /* Ajusta o padding para telas muito pequenas */
+    }
+  
+    .contatos h2 {
+      font-size: 5vh; /* Reduz o tamanho do título para telas pequenas */
+    }
+  
+    .contatos p {
+      font-size: 1.8vh; /* Ajuste da fonte do texto */
+    }
+  
+    .experiencias-title, .ctt-title {
+      font-size: 3.5vh; /* Ajusta o tamanho dos títulos */
+    }
+  
+    .ctt-container {
+      gap: 8px; /* Diminui o espaço entre as imagens para telas muito pequenas */
+    }
+  
+    .linguagem-img {
+      width: 12vw; /* Ajusta o tamanho das imagens para telas menores */
+      margin: 1.5vw; /* Ajusta a margem entre as imagens */
+    }
+  }
+  

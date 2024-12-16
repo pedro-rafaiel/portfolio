@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import SobreMim from './components/SobreMim';
 import Projetos from './components/Projetos';
 import Inicio from './components/Inicio';
+import Contatos from './components/Contatos'
 import './App.css';
 
 function App() {
@@ -38,11 +39,35 @@ function App() {
     },
   ];
 
+  useEffect(() => {
+    const createSparkle = (e) => {
+      const sparkle = document.createElement('div');
+      sparkle.classList.add('sparkle');
+      document.body.appendChild(sparkle);
+
+      // Define a posição do brilho
+      sparkle.style.left = `${e.clientX}px`;
+      sparkle.style.top = `${e.clientY}px`;
+
+      // Remove a partícula após a animação
+      setTimeout(() => {
+        sparkle.remove();
+      }, 1000);
+    };
+
+    window.addEventListener('mousemove', createSparkle);
+
+    return () => {
+      window.removeEventListener('mousemove', createSparkle);
+    };
+  }, []);
+
   return (
     <div className="App">
       <Inicio />
       <SobreMim />
       <Projetos projects={projects} />
+      <Contatos />
     </div>
   );
 }

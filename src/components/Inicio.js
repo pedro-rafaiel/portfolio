@@ -13,7 +13,7 @@ function Inicio() {
         <ul>
           <li><a href="#sobre-mim">Sobre Mim</a></li>
           <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="#contatos">Contatos</a></li>
         </ul>
       </nav>
     </header>
