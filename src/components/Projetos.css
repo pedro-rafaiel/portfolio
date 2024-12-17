@@ -1,57 +1,96 @@
-/* Estilização da seção Projetos */
 .projetos {
-  background-image: url('./images/fundo3.svg'); /* Caminho para sua imagem de fundo */
+  background-color: #0E0D1E;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 20px;
   color: #c9d1d9;
   text-align: center;
-  min-height: 100vh; /* Garante que cubra toda a altura da tela */
-  width: 100vw; /* Garante que ocupe toda a largura da viewport */
-  margin: 0; /* Remove margens indesejadas */
+  min-height: 100vh; 
+  width: 100vw; 
+  margin: 0; 
 }
 
 .projetos-container {
   display: flex;
-  flex-direction: column; /* Empilha os projetos em uma coluna */
-  align-items: center;
-  gap: 20px; /* Espaço entre os cards */
+  flex-direction: column;
+  align-items: left;
+  gap: 20px; 
   width: 100%;
 }
 
 .projeto-card {
-    background-color: rgba(22, 27, 34, 0.85);
-    border-radius: 10px;
-    padding: 10px;
-    width: 100%; /* Largura total da página */
-    text-align: left;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative;
-    transition: height 0.3s ease, max-height 0.3s ease; /* Suaviza a expansão do card */
-    overflow: hidden; /* Garante que os detalhes não fiquem visíveis até expandir */
+  background-color: rgba(22, 27, 34, 0.85);
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: height 0.3s ease, max-height 0.3s ease;
+  overflow: hidden;
+}
+
+.projeto-card.closed {
+  max-height: 10vh;
+}
+
+.projeto-card.open {
+  max-height: 100vh;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: #58a6ff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.project-details {
+  margin-top: 10px;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  .projetos {
+    padding: 15px;
+    text-align: center;
   }
-  
-  .projeto-card.closed {
-    max-height: 10vh; /* Altura fechada do card */
+
+  .projetos-container {
+    gap: 10px;
   }
-  
-  .projeto-card.open {
-    max-height: 100vh; /* Altura máxima quando o card está aberto */
+
+  .projeto-card {
+    width: 100%; 
+    padding: 15px; 
   }
-  
+
   .toggle-button {
-    background: none;
-    border: none;
-    color: #58a6ff;
-    font-size: 1.2rem;
-    cursor: pointer;
-    position: absolute;
-    right: 10px;
-    top: 10px;
+    font-size: 1rem;
+    padding: 5px 10px;
   }
-  
-  .project-details {
-    margin-top: 10px;
+
+  .projeto-card.closed {
+    max-height: 15vh;
   }
-  
+}
+
+/* Responsividade para dispositivos móveis muito pequenos (celulares) */
+@media (max-width: 480px) {
+  .projetos-container {
+    gap: 8px;
+  }
+
+  .projeto-card {
+    padding: 10px; 
+  }
+
+  .toggle-button {
+    font-size: 0.9rem;
+  }
+}

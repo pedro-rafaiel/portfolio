@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import SobreMim from './components/SobreMim';
 import Projetos from './components/Projetos';
 import Inicio from './components/Inicio';
+import Contatos from './components/Contatos'
 import './App.css';
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     {
       title: 'Inserção de Placas em Telhados 2D',
       languages: ['JavaScript', 'HTML', 'CSS'],
-      description: 'Descrição: Insere placas em uma imagem retirada do Google Maps ou Earth baseado nas dimensões do telhado e placas, se restrigindo apenas a área que está disponível para colocar. No sistema é necessário colocar as dimensões, tanto da imagem como da placa, a distância horizontal e/ou vertical de uma placa para a outra. É possível também recortar a imagem, rotacionar, colocar a área da imagem, desenhar restrições para não colocar placas em cima, tudo isso manualmente, após isso ser feito ele gera duas imagens com as placas em retrato e paisagem.',
+      description: 'Descrição: O sistema permite inserir placas em uma imagem do Google Maps ou Earth, ajustando as dimensões do telhado e das placas. É possível definir a distância entre as placas, recortar a imagem, rotacioná-la, e desenhar restrições para evitar sobreposição de placas. Após as configurações, o sistema gera duas imagens com as placas dispostas em formato retrato e paisagem.',
       githubLink: 'https://github.com/GuaraciTech/Solaresp-Code',
     },
     {
@@ -36,13 +37,41 @@ function App() {
       description: 'Descrição: Simula o agendamento e gerenciamento de consultas médicas. Ele aloca pacientes para consultas com base em prioridades, gerencia faltas com um sistema de substituição de banco de reservas, e gera relatórios detalhados sobre o processo.',
       githubLink: 'https://github.com/pedro-rafaiel/agenda_hospital',
     },
+    {
+      title: 'RPG (Em andamento)',
+      languages: ['C#'],
+      description: 'Descrição: Joguinho simples de uma luta apenas por enquanto, de um herói contra um goblin, onde você é o herói e pode se defender ou atacar, baseado nos dados de 1 a 10 vai decidir o seu dano e o do inimigo.',
+      githubLink: 'https://github.com/pedro-rafaiel/RPG',
+    },
   ];
+
+  useEffect(() => {
+    const createSparkle = (e) => {
+      const sparkle = document.createElement('div');
+      sparkle.classList.add('sparkle');
+      document.body.appendChild(sparkle);
+
+      sparkle.style.left = `${e.clientX}px`;
+      sparkle.style.top = `${e.clientY}px`;
+
+      setTimeout(() => {
+        sparkle.remove();
+      }, 1000);
+    };
+
+    window.addEventListener('mousemove', createSparkle);
+
+    return () => {
+      window.removeEventListener('mousemove', createSparkle);
+    };
+  }, []);
 
   return (
     <div className="App">
       <Inicio />
       <SobreMim />
       <Projetos projects={projects} />
+      <Contatos />
     </div>
   );
 }

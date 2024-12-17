@@ -1,6 +1,6 @@
 import React from 'react';
-import fotoPerfil from './images/PERFIL.svg'; // Substitua pela imagem correta depois
-import './Inicio.css'; // Adicione estilos personalizados aqui
+import fotoPerfil from './images/PERFIL.svg'; 
+import './Inicio.css'; 
 
 function Inicio() {
   return (
@@ -13,7 +13,7 @@ function Inicio() {
         <ul>
           <li><a href="#sobre-mim">Sobre Mim</a></li>
           <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="#contatos">Contatos</a></li>
         </ul>
       </nav>
     </header>

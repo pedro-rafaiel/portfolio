@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -6,26 +5,49 @@
 }
 
 html {
-  font-size: 2.5vh; /* Define um tamanho base para a fonte */
+  font-size: 2.5vh;
 }
 
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 2;
-  overflow-x: hidden; /* Remove a rolagem horizontal */
+  overflow-x: hidden;
+}
+.sparkle {
+  position: fixed;
+  width: 7px;
+  height: 7px;
+  background-color: rgba(255, 255, 255);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: fadeOut 0.8s ease-out forwards;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  box-shadow: 0 0 8px 2px rgba(247, 247, 175, 0.9);
 }
 
+@keyframes fadeOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
 .App {
   text-align: center;
 }
 
 h2 {
-  font-size: 2.5rem; /* Usa rem para que seja proporcional ao tamanho da fonte base */
+  font-size: 2.5rem;
   color: #d8dcdf;
   margin-bottom: 20vh;
 }
 
-/* Tamanhos de texto com vw (opcional) */
+
 h2 {
-  font-size: calc(2.5rem + 1vw); /* Tamanho da fonte que aumenta com a largura da viewport */
+  font-size: calc(2.5rem + 1vw);
 }
+

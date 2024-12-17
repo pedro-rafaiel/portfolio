@@ -1,34 +1,49 @@
 .inicio {
     text-align: center;
-    background-image: url('./images/fundo1.svg'); /* Caminho da imagem de fundo */
-    background-size: cover; /* A imagem cobre toda a área */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-image: url('./images/fundo1.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 10vh 0;
-    height: 100vh; /* Define a altura como 100% da tela */
+    height: 100vh;
+}
+/* Remover o background-attachment em telas móveis */
+@media (max-width: 768px) {
+    .inicio {
+        background-attachment: scroll; 
+    }
 }
 
+/* Outras media queries para diferentes tamanhos de tela */
+@media (max-width: 480px) {
+    .inicio {
+        background-size:auto; 
+        background-position: top center;
+    }
+}
 .perfil-container {
     margin-top: 5vh;
-    display: inline-block; /* Permite que o container tenha apenas a largura necessária */
+    display: inline-block;
 }
 
 .perfil-img {
-    width: 50vh; /* Ajuste o tamanho da imagem conforme necessário */
+    width: 25vw; 
+    max-width: 100vw; 
+    height: auto;
 }
 
 .perfil-titulo {
-    color: white; /* Cor do texto */
-    font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
-    margin-bottom: 1vh; /* Espaço abaixo do título para separá-lo da imagem */
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1vh;
 }
 
 .navbar {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se não houver espaço */
+    flex-wrap: wrap;
     font-size: 1.5rem;
-    margin-top: 1vh; /* Adiciona um espaço acima da navbar */
+    margin-top: 1vh;
 }
 
 .navbar ul {
@@ -37,27 +52,61 @@
 }
 
 .navbar ul li {
-    display: inline-block; /* Use inline-block para permitir margens e padding */
-    margin-right: 5vw; /* Margem à direita com vw */
-    margin-bottom: 2vh; /* Espaço abaixo de cada item */
+    display: inline-block;
+    margin-right: 5vw; 
+    margin-bottom: 2vh;
 }
 
 .navbar ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    padding: 1vh 2vw; /* Padding responsivo */
-    border-radius: 5vh; /* Arredonda os cantos */
-    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    padding: 1vh 2vw;
+    border-radius: 5vh;
+    transition: background-color 0.3s;
 }
 
 .navbar ul li a:hover {
-    background-color: rgb(167, 106, 167); /* Efeito de hover */
+    background-color: rgb(167, 106, 167);
 }
 
-/* Responsividade adicional */
-@media (max-width: 300vh) {
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .perfil-img {
+        width: 60vw; 
+    }
+
+    .perfil-titulo {
+        font-size: 1.3rem;
+    }
+
+    .navbar {
+        flex-direction:row;
+        font-size: 1.2rem;
+    }
+
     .navbar ul li {
-        margin-right: 2vw; /* Diminui a margem em telas menores */
+        margin-right: 0;
+        margin-bottom: 1.5vh; 
+    }
+
+    .navbar ul li a {
+        padding: 1vh 3vw;
+    }
+}
+
+/* Responsividade para telas muito pequenas */
+@media (max-width: 480px) {
+    .perfil-img {
+        width: 60vw; 
+    }
+
+    .perfil-titulo {
+        font-size: 1.3rem; 
+    }
+
+    .navbar ul li a {
+        font-size: 1rem;
+        flex-direction:row; 
     }
 }
