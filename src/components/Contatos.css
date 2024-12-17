@@ -1,101 +1,100 @@
 /* Estilização da seção Sobre Mim */
 .contatos {
-    padding: 5vh;
-    background-color: #0E0D1E;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    width: 100vw;
-    min-height: 50vh; 
-    margin: 0;
+  padding: 5vh;
+  background-color: #0E0D1E;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  width: 100vw;
+  min-height: 50vh; 
+  margin: 0;
+}
+
+.contatos h1 {
+  text-align: center; 
+  margin-bottom: 20px;
+  color: white;
+  font-size: 8h;
+}
+
+.contatos p {
+  text-align: center; 
+  color: white;
+  font-size: 3vh;
+}
+
+.experiencias-title, .ctt-title {
+  text-align: center; 
+  margin: 20px 0;
+  font-size: 5vh;
+}
+
+.ctt-container {
+  display: flex; 
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5vh;
+}
+
+.ctt-img {
+  width: 7vw; 
+  height: auto; 
+  margin: 1vw;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  .contatos {
+    padding: 4vh 2vw;
   }
-  
+
   .contatos h1 {
-    text-align: center; 
-    margin-bottom: 20px;
-    color: white;
-    font-size: 8h;
+    font-size: 6vh;
   }
-  
+
   .contatos p {
-    text-align: center; 
-    color: white;
-    font-size: 3vh;
+    font-size: 4vh;
   }
-  
+
   .experiencias-title, .ctt-title {
-    text-align: center; 
-    margin: 20px 0;
-    font-size: 5vh;
+    font-size: 4vh;
   }
-  
+
   .ctt-container {
-    display: flex; 
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 5vh;
+    gap: 10px;
   }
-  
-  .ctt-img {
-    width: 7vw; 
-    height: auto; 
+
+  .linguagem-img {
+    width: 10vw;
     margin: 1vw;
   }
-  
-  /* Responsividade para telas pequenas */
-  @media (max-width: 768px) {
-    .contatos {
-      padding: 4vh 2vw;
-    }
-  
-    .contatos h1 {
-      font-size: 6vh;
-    }
-  
-    .contatos p {
-      font-size: 4vh;
-    }
-  
-    .experiencias-title, .ctt-title {
-      font-size: 4vh;
-    }
-  
-    .ctt-container {
-      gap: 10px;
-    }
-  
-    .linguagem-img {
-      width: 10vw;
-      margin: 1vw;
-    }
+}
+
+/* Responsividade para dispositivos móveis muito pequenos */
+@media (max-width: 480px) {
+  .contatos {
+    padding: 3vh 2vw;
   }
-  
-  /* Responsividade para dispositivos móveis muito pequenos */
-  @media (max-width: 480px) {
-    .contatos {
-      padding: 3vh 2vw;
-    }
-  
-    .contatos h2 {
-      font-size: 5vh;
-    }
-  
-    .contatos p {
-      font-size: 1.8vh;
-    }
-  
-    .experiencias-title, .ctt-title {
-      font-size: 3.5vh;
-    }
-  
-    .ctt-container {
-      gap: 8px;
-    }
-  
-    .linguagem-img {
-      width: 12vw;
-      margin: 1.5vw;
-    }
+
+  .contatos h2 {
+    font-size: 5vh;
   }
-  
+
+  .contatos p {
+    font-size: 1.8vh;
+  }
+
+  .experiencias-title, .ctt-title {
+    font-size: 3.5vh;
+  }
+
+  .ctt-container {
+    gap: 8px;
+  }
+
+  .linguagem-img {
+    width: 12vw;
+    margin: 1.5vw;
+  }
+}
