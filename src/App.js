@@ -38,6 +38,12 @@ function App() {
       githubLink: 'https://github.com/pedro-rafaiel/agenda_hospital',
     },
     {
+      title: 'Frutaria API',
+      languages: ['React, Node.js, MySQL'],
+      description: 'Descrição: Este projeto foi criado para facilitar o gerenciamento de produtos de uma frutaria, utilizando Node.js, Express e MySQL no backend, e React no frontend. Nele é possível adicionar, editar(nome, preço e disponível em estoque) e excluir o produto, com área da empresa e clientes. Na área do cliente não é possível fazer alterações no projeto, apenas editar o que for colocado no carrinho, selecionando a forma de pagamento pode ter taxa de pagamento ou desconto, ao finalizar a compra no carrinho, vai ser mandada uma mensagem para o número que está no código com todos os detalhes da compra (futuramente será colocado na área da empresa para alterar o número quando desejar).',
+      githubLink: 'https://github.com/pedro-rafaiel/frutaria/tree/master',
+    },
+    {
       title: 'RPG (Em andamento)',
       languages: ['C#'],
       description: 'Descrição: Joguinho simples de uma luta apenas por enquanto, de um herói contra um goblin, onde você é o herói e pode se defender ou atacar, baseado nos dados de 1 a 10 vai decidir o seu dano e o do inimigo.',
