@@ -1,0 +1,107 @@
+.sobre-mim {
+  padding: 1vh;
+  color: #202E63;
+  width: 100vw; 
+  min-height: 100vh;
+  margin: 0;
+}
+
+.sobre-mim h2 {
+  margin-left: 2%;
+  text-align: left;
+  margin-bottom: 0.1vh;
+  color: #202E63;
+  text-decoration: underline;
+}
+
+.sobre-mim p {
+  text-align: left; 
+  color: #202E63;
+  font-size: 3vh;
+  margin-left: 3%;
+}
+
+.experiencias-title{
+  text-decoration: underline;
+  display: flex;
+  font-size: 5vh; 
+  justify-content: left;
+  text-align: left;
+  margin-left: 2%; 
+}
+
+.linguagens-title {
+  text-align: center; 
+  margin: 20px 0; 
+  font-size: 7vh;
+  text-decoration: underline;
+}
+
+.linguagens-container {
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  margin-top: 2vh; 
+}
+
+.linguagem-img {
+  width: 5vw; 
+  height: auto; 
+  margin: 2vw;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  .sobre-mim {
+    padding: 4vh 2vw;
+  }
+
+  .sobre-mim h2 {
+    font-size: 6vh; 
+  }
+
+  .sobre-mim p {
+    font-size: 4vh; 
+  }
+
+  .experiencias-title, .linguagens-title {
+    font-size: 4vh; 
+  }
+
+  .linguagens-container {
+    gap: 10px; 
+  }
+
+  .linguagem-img {
+    width: 10vw; 
+    margin: 1vw;
+  }
+}
+
+/* Responsividade para dispositivos móveis muito pequenos */
+@media (max-width: 480px) {
+  .sobre-mim {
+    padding: 3vh 2vw;
+  }
+
+  .sobre-mim h2 {
+    font-size: 5vh; 
+  }
+
+  .sobre-mim p {
+    font-size: 1.8vh; 
+  }
+
+  .experiencias-title, .linguagens-title {
+    font-size: 3.5vh; 
+  }
+
+  .linguagens-container {
+    gap: 8px; 
+  }
+
+  .linguagem-img {
+    width: 12vw; 
+    margin: 1.5vw; 
+  }
+}

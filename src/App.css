@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 2.5vh;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 2;
+  overflow-x: hidden;
+}
+
+.sparkle {
+  position: fixed;
+  width: 7px;
+  height: 7px;
+  background-color: #202E63;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: fadeOut 0.8s ease-out forwards;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+@keyframes fadeOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+.App {
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #202E63;
+  margin-bottom: 20vh;
+}
+
+
+h2 {
+  font-size: calc(2.5rem + 1vw);
+}
+

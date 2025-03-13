@@ -1,0 +1,20 @@
+.floating-square {
+    position: fixed;
+    background-color: rgba(32, 46, 99, 0.1);
+    transform: rotate(45deg);
+    z-index: -1;
+    animation: floatAnimation 8s infinite alternate ease-in-out;
+  }
+  
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0) rotate(45deg);
+    }
+    50% {
+      transform: translateY(-2vw) rotate(90deg);
+    }
+    100% {
+      transform: translateY(0) rotate(135deg);
+    }
+  }
+  
