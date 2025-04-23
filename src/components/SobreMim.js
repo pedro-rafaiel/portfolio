@@ -30,14 +30,25 @@ function SobreMim() {
     <section id="sobre-mim" className="sobre-mim">
       <h2>Sobre Mim</h2>
       <p><strong>Nome:</strong> Pedro Rafael Pereira de Oliveira</p>
-      <p><strong>Idade:</strong> 21</p>
-      <p><strong>Formação:</strong> Técnico em Redes de Computadores | Graduando em Ciências da Computação - UFCA</p>
+      <p><strong>Idade:</strong> 22</p>
+      <p><strong>Formação:</strong> Técnico em Redes de Computadores - EEEP Wellington Belém de Figueiredo | Graduando em Ciências da Computação - UFCA</p>
       
       <h3 className="experiencias-title">Experiências</h3>
       <ul>
-        <p>Estágio de 2 meses integralmente na provedora de internet Aj-Net</p>
-        <p>Bolsa de 6 meses pela BRISA Sociedade para o Desenvolvimento da Tecnologia da Informação</p>
+        <p>Estágio de 2 meses integralmente na provedora de internet Aj-Net - (Janeiro/2021 à Março/2021)</p>
+        <p>Bolsa de 6 meses pela BRISA Sociedade para o Desenvolvimento da Tecnologia da Informação - (Março/2024 à Setembro/2024)</p>
+        <p>Coordenador de Assuntos Estudantis - Centro Acadêmico de Ciências da Computação Juazeiro do Norte - Ceará - (2022 à 2023)</p>
+        <p>
+          <a href="https://drive.google.com/drive/folders/1puNyoGQlz7v55EkbyNvOyG9aLP4tupfN?usp=sharing" target="_blank" rel="noopener noreferrer">
+            Acesse meus certificados aqui
+          </a>
+        </p>    
       </ul>
+
+      <h3 className='experiencias-title'>Línguas</h3>
+      <p><strong>Português</strong></p>
+      <p><strong>Inglês: </strong>Intermediário</p>
+      <p><strong>Espanhol: </strong>Intermediário</p>
 
       <h3 className="linguagens-title">Linguagens</h3>
       <div className="linguagens-container">
