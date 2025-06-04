@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.80ce3682.css",
-    "main.js": "/portfolio/static/js/main.bfc4ecae.js",
+    "main.js": "/portfolio/static/js/main.4972fc06.js",
     "static/media/RPG.svg": "/portfolio/static/media/RPG.d15fcf858f500bbfd9a696ee4eca7c18.svg",
     "static/media/placas solares.svg": "/portfolio/static/media/placas solares.adce4efd75ef82943e7a93d055b8bd21.svg",
     "static/media/frutaria api.svg": "/portfolio/static/media/frutaria api.dd17cf5b553e1de25bfe4ced48329706.svg",
@@ -11,6 +11,7 @@
     "static/media/csharp.svg": "/portfolio/static/media/csharp.4f5c3a7020b1915c8d00ec4f36f7f049.svg",
     "static/media/Python.svg": "/portfolio/static/media/Python.603588be47dff6249f8b278f18752edb.svg",
     "static/media/postgreesql.svg": "/portfolio/static/media/postgreesql.b50b966c998e5c8e2aebd1d343500a36.svg",
+    "static/media/queimadas.svg": "/portfolio/static/media/queimadas.0a133cd357978b77cef1c6d39343790c.svg",
     "static/media/react.svg": "/portfolio/static/media/react.a37c4898b4338b1b9a22a5951db42468.svg",
     "static/media/c.svg": "/portfolio/static/media/c.39bf9acc0b618dec6a1ce4a4fdfcc8d3.svg",
     "static/media/MongoDB.svg": "/portfolio/static/media/MongoDB.17eabb497fb7f9dcb8e90577a61d4dde.svg",
@@ -25,10 +26,10 @@
     "static/media/js.svg": "/portfolio/static/media/js.7a85cfcf6e7d5a420f374f33b5298da3.svg",
     "index.html": "/portfolio/index.html",
     "main.80ce3682.css.map": "/portfolio/static/css/main.80ce3682.css.map",
-    "main.bfc4ecae.js.map": "/portfolio/static/js/main.bfc4ecae.js.map"
+    "main.4972fc06.js.map": "/portfolio/static/js/main.4972fc06.js.map"
   },
   "entrypoints": [
     "static/css/main.80ce3682.css",
-    "static/js/main.bfc4ecae.js"
+    "static/js/main.4972fc06.js"
   ]
 }
