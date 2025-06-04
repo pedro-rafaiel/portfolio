@@ -8,6 +8,7 @@ import telhado from './components/images/placas solares.svg';
 import clinica from './components/images/Clinicamed.svg';
 import frutaria from './components/images/frutaria api.svg';
 import RPG from './components/images/RPG.svg';
+import queimadas from './components/images/queimadas.svg'
 
 function App() {
   const projects = [
@@ -33,11 +34,18 @@ function App() {
       image: frutaria,
     },
     {
-      title: 'RPG (Em andamento)',
+      title: 'RPG',
       languages: ['C#'],
-      description: 'Descrição: Joguinho simples de uma luta apenas por enquanto, de um herói contra um goblin, onde você é o herói e pode se defender ou atacar, baseado nos dados de 1 a 10 vai decidir o seu dano e o do inimigo.',
+      description: 'Descrição: Joguinho simples de uma luta apenas, de um herói contra um goblin, onde você é o herói e pode se defender ou atacar, baseado nos dados de 1 a 10 vai decidir o seu dano e o do inimigo.',
       githubLink: 'https://github.com/pedro-rafaiel/RPG',
       image:RPG,
+    },
+    {
+      title: 'Gerenciador de Queimadas',
+      languages: ['Python'],
+      description: 'Descrição: Gerenciador onde simula focos de queimadas baseado no grafo criado, terá pontos de coletas de água, simulação de qual vértice começa a queimada, quantos litros serão necessários para apagar o fogo e o caminho que os brigadistas percorrem para apagar o fogo e voltar para o posto. Feito com algoritmo de Dijkstra para caminho mínimo dos brigadistas e BFS (Busca em Largura) para espalhar o fogo pelos vértices. Será feito um relatório em txt com toda a simulação passo a passo.',
+      githubLink: 'https://github.com/pedro-rafaiel/gerenciador_de_queimadas',
+      image:queimadas,
     },
   ];
 

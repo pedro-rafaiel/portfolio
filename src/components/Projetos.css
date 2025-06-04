@@ -1,11 +1,11 @@
 .sublinhar {
   text-decoration: underline;
-  margin-bottom: 5px; /* Reduz a distância para o container */
+  margin-bottom: 5px; 
   padding: 0;
 }
 
 .projetos h2 {
-  margin-bottom: 10px; /* Ajuste para aproximar do container */
+  margin-bottom: 10px; 
   padding: 0;
 }
 .projetos-wrapper {
@@ -63,13 +63,13 @@
   margin: 0 auto;
   width: 100vw; 
   height: auto;
-  max-height: 500px; /* Ajuste a altura para caber na tela */
+  max-height: 500px;
   padding: 20px;
   padding-top: 10px;
 }
 
 .projeto-card.focused.open {
-  width: 100vw; /* Mantém o card expandido ocupando a largura total */
+  width: 100vw; 
   height: auto;
   max-height: 800px;
   padding: 20px;
